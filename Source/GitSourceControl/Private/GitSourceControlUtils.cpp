@@ -2419,7 +2419,6 @@ bool PullOrigin(const FString& InPathToGitBinary, const FString& InPathToReposit
 
 	if (AlreadyReloaded.Num())
 	{
-		OutFiles.Reserve(AbsoluteDifferentFiles.Num() - AlreadyReloaded.Num());
 		for (const auto& File : AbsoluteDifferentFiles)
 		{
 			if (!AlreadyReloaded.Contains(File))
